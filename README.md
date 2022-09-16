@@ -8,7 +8,7 @@ Hay declarada una array de objetos (cropInfo) que contiene todos los cultivos y 
 
 Los objetivos son los siguientes:
 
-1. Al seleccionar el desplegable <select>, elegir un cultivo disponible y que se muestre su imagen en el recuadro blanco (<div id="marco"><\div>).
+1. Al seleccionar el desplegable <select>, elegir un cultivo disponible y que se muestre su imagen en el recuadro blanco.
 
 2. Al introducir un número en el <input>, coger ese número y almacenarlo.
 
