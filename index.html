@@ -1,0 +1,59 @@
+<html></html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="https://ddv.assets.gameloft.com/assets/ddv_logo_en_e538fef135.svg" alt="disney_logo">
+    <h1>Calculadora de cosecha</h1>
+        <div class="howTo">
+            <h2>Cómo se usa:</h2>
+                <p>1.Selecciona el cultivo</p>
+                <p>2.Introduce la cantidad a plantar.</p>
+                <p>3.Click en "CALCULAR"</p>
+        </div>
+
+    <div id="marco"></div>
+
+    <div class="buttons">
+        <select name="" id="">
+            <option value="Espárrago">Espárrago</option>
+            <option value="Pimiento">Pimiento</option>
+            <option value="Zanahoria">Zanahoria</option>
+            <option value="Chile">Chile</option>
+            <option value="Pepino">Pepino</option>
+            <option value="Berenjena">Berenjena</option>
+            <option value="Puerro">Puerro</option>
+            <option value="Lechuga">Lechuga</option>
+            <option value="Okra">Okra</option>
+            <option value="Cebolla">Cebolla</option>
+            <option value="Patata">Patata</option>
+            <option value="Calabaza">Calabaza</option>
+            <option value="Espinaca">Espinaca</option>
+            <option value="Tomate">Tomate</option>
+            <option value="Calabacín">Calabacín</option>
+            <option value="Arroz">Arroz</option>
+            <option value="Trigo">Trigo</option>
+            <option value="Canola">Canola</option>
+            <option value="Maíz">Maíz</option>
+            <option value="Soja">Soja</option>
+            <option value="Caña de azúcar">Caña de azúcar</option>
+            <option value="Algodón">Algodón</option>
+        </select>
+        <input type="number" placeholder="Cantidad (en unidades)">
+        <button onclick="calcularProfit()">CALCULAR</button>
+    </div>
+
+    <div id="results">
+        <h3 class="cropResult"></h3>
+    </div>
+    <footer class="bottom">
+    Created by me
+    </footer>
+<script src="app.js"></script>  
+</body>
+</html>
