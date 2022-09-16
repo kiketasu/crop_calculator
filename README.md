@@ -8,11 +8,11 @@ Hay declarada una array de objetos (cropInfo) que contiene todos los cultivos y 
 
 Los objetivos son los siguientes:
 
-1. Al seleccionar el desplegable <select>, elegir un cultivo disponible y que se muestre su imagen en el recuadro blanco.
+1. Al seleccionar el desplegable, elegir un cultivo disponible y que se muestre su imagen en el recuadro blanco.
 
-2. Al introducir un número en el <input>, coger ese número y almacenarlo.
+2. Al introducir un número dónde indica "cantidad", coger ese número y almacenarlo.
 
-3. Al clickar el botón "CALCULAR" se debe mostrar en el elemento <div id="results"><\div> lo siguiente:
+3. Al clickar el botón "CALCULAR" se debe mostrar al final de la página lo siguiente:
 
     - Un string "Coste del cultivo" seguido de -> El resultado de la operación del número introducido x el valor de seedPrice: del cultivo seleccionado.
     
