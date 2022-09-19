@@ -209,10 +209,9 @@ function calcularProfit(){
 // select option muestre la imagen correspondiente al cultivo
 function imagenCultivo (){
     let container = document.getElementById('marco')
-    for(const element of cropInfo){
-        const cropObject = element;
-            if(element.name === "Okra")
-            container.innerHTML = `<img src= "${element.img}">`
+    for(const cropObject of cropInfo){
+            if(cropObject.name === "Pimiento")
+            container.innerHTML = `<img src= "${cropObject.img}">`
     }
 }
 imagenCultivo()
