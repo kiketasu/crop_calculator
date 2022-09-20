@@ -210,15 +210,29 @@ function selectedOption() {
   for (const cropObject of cropInfo) {
     if (selected.value === cropObject.name) {
       container.innerHTML = `<img src= "${cropObject.img}">`;
+    };
+  };
+};
+//multiplicar input number x seed price = coste
+function calcularProfit() {
+  let selected = document.getElementById("cultivo");
+  let inputNumber = document.getElementById("cantidad");
+  
+  for (const cropObject2 of cropInfo) {
+    let coste = cropObject2.seedPrice * inputNumber.value;
+    let beneficio = ((cropObject2.sellPrice * inputNumber.value) - coste);
+    if (selected.value === cropObject2.name){
+      alert(`El coste es de ${coste} monedas`)
+      alert(`El beneficio será de ${beneficio} monedas`)
+      alert(`El cultivo debe plantarse en ${cropObject2.location}`)
+      alert(`El cultivo deberá regarse ${cropObject2.waters} veces`)
+      alert(`El cultivo tardará ${cropObject2.time} horas en crecer aproximadamente`)
+      
     }
   }
-}
-// TODO multiplicar input number x seed price = coste
-function calcularProfit() {
-  let inputNumber = document.getElementById;
+  
 }
 
-// TODO multiplicar input number x sell price = beneficioBruto
-// TODO restar beneficioBruto - coste = TOTAL
-// TODO escribir en otra pagina
-
+// multiplicar input number x sell price = beneficioBruto
+// restar beneficioBruto - coste = TOTAL
+//  escribir en otra pagina
