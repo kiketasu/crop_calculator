@@ -207,19 +207,17 @@ function calcularProfit(){
     console.log("has clickado el boton")
 };
 // select option muestre la imagen correspondiente al cultivo
-function imagenCultivo (){
+function cargarImagen(){
     let container = document.getElementById('marco')
-    //let selectorCultivos = document.forms["selector"].cultivos;
+    let selected = document.getElementById("cultivo");
+     for(const cropObject of cropInfo){
+     if(selected.value === cropObject.name){
+       container.innerHTML = `<img src= "${cropObject.img}">`
+     };
+     };
+   };
+   cargarImagen();
 
-    //selected.value
-    for(const cropObject of cropInfo){
-            if(cropObject.name === "Calabaza"){
-            container.innerHTML = `<img src= "${cropObject.img}">`
-            };
-    };
-};
-imagenCultivo();
-console.log("Hola")
 
 
 // multiplicar input number x seed price = coste
