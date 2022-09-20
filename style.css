@@ -33,17 +33,14 @@ h1{
 .imagen{
     padding-top: 15px;
 }
-.buttons {
-    display: flex;
-    block-size: 2em;
 
-}
 #results{
     background-color: rgb(255, 255, 255);
     padding: 10px;
     margin: 10px;
     color: black;
     width: 100em;
+    height: 50px;
 }
 
 .bottom{

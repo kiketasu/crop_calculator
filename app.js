@@ -201,20 +201,25 @@ const cropInfo = [
         img: "https://dreamlightvalley.wikizet.com/english/images/thumb/c/c3/Cotton.png/103px-Cotton.png"
     },
 ];
-
+console.log("hola")
 //declarar funcion que se ejecute al presionar el botton "CALCULAR"
 function calcularProfit(){
     console.log("has clickado el boton")
-}
+};
 // select option muestre la imagen correspondiente al cultivo
 function imagenCultivo (){
     let container = document.getElementById('marco')
+    //let selectorCultivos = document.forms["selector"].cultivos;
+
+    //selected.value
     for(const cropObject of cropInfo){
-            if(cropObject.name === "Pimiento")
+            if(cropObject.name === "Calabaza"){
             container.innerHTML = `<img src= "${cropObject.img}">`
-    }
-}
-imagenCultivo()
+            };
+    };
+};
+imagenCultivo();
+console.log("Hola")
 
 
 // multiplicar input number x seed price = coste
