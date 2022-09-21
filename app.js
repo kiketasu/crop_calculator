@@ -1,4 +1,4 @@
-//declarar array de objetos con las características de los cultivos
+//todos los datos relevantes de todos los cultivos en DLV a dia 21/09/22*
 const cropInfo = [
   {
     name: "Espárrago",
@@ -199,40 +199,40 @@ const cropInfo = [
     img: "https://dreamlightvalley.wikizet.com/english/images/thumb/c/c3/Cotton.png/103px-Cotton.png",
   },
 ];
-//declarar funcion que se ejecute al presionar el botton "CALCULAR"
-function calcularProfit() {
-  console.log("has clickado el boton");
-}
-//funcion que muestre la imagen correspondiente al cultivo
+
+//funcion que muestra la imagen correspondiente al cultivo en "marco"
 function selectedOption() {
   let container = document.getElementById("marco");
   let selected = document.getElementById("cultivo");
+
   for (const cropObject of cropInfo) {
     if (selected.value === cropObject.name) {
       container.innerHTML = `<img src= "${cropObject.img}">`;
     };
   };
 };
-//multiplicar input number x seed price = coste
+
+//al clickar el boton se ejecutará la siguiente función para:
 function calcularProfit() {
   let selected = document.getElementById("cultivo");
   let inputNumber = document.getElementById("cantidad");
-  
+  // calcular coste del cultivo; beneficio neto; zona de plantación; riego y tiempo
   for (const cropObject2 of cropInfo) {
     let coste = cropObject2.seedPrice * inputNumber.value;
     let beneficio = ((cropObject2.sellPrice * inputNumber.value) - coste);
-    if (selected.value === cropObject2.name){
-      alert(`El coste es de ${coste} monedas`)
-      alert(`El beneficio será de ${beneficio} monedas`)
-      alert(`El cultivo debe plantarse en ${cropObject2.location}`)
-      alert(`El cultivo deberá regarse ${cropObject2.waters} veces`)
-      alert(`El cultivo tardará ${cropObject2.time} horas en crecer aproximadamente`)
-      
-    }
-  }
-  
-}
+    if (selected.value === cropObject2.name){ 
+      alert(`El coste de ${cropObject2.name} es de ${coste} monedas`)
+      alert(`El beneficio neto de ${cropObject2.name} será de ${beneficio} monedas`)
+      alert(`${cropObject2.name} debe plantarse en "${cropObject2.location}"`)
+      alert(`${cropObject2.name} deberá regarse ${cropObject2.waters} veces`)
+      //pasar el tiempo de horas a minutos cuando es menor a 1 hora.
+      if (cropObject2.time < 1){
+        let timeMinutes = cropObject2.time * 60;
+        alert(`${cropObject2.name} tardará ${timeMinutes} minutos en crecer aproximadamente`)
+      } else {
+        alert(`${cropObject2.name} tardará ${cropObject2.time} horas en crecer aproximadamente`)
+      };
+    };
+  };
+};
 
-// multiplicar input number x sell price = beneficioBruto
-// restar beneficioBruto - coste = TOTAL
-//  escribir en otra pagina

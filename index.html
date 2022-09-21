@@ -10,11 +10,7 @@
   </head>
   <body>
     <header>
-      <img
-        src="https://ddv.assets.gameloft.com/assets/ddv_logo_en_e538fef135.svg"
-        alt="disney_logo"
-      />
-      <h1>Calculadora de cosecha</h1>
+      <h1>Calculadora de cosecha DLV</h1>
     </header>
 
     <div class="howTo">
@@ -25,10 +21,13 @@
       <p>No tendrá en cuenta la duplicación de tu acompañante</p>
     </div>
 
-    <div id="marco"></div>
+    <div id="marco"><img src="https://th.bing.com/th/id/OIP.mZ7TM_2MBpT9AM4WU0LSzgHaHg?pid=ImgDet&rs=1" alt="walle"></div>
 
     <form id="selector">
-      <select onchange="selectedOption()" name="" id="cultivo">
+      <!-- La función "selectedOption" se ejecuta al cambiar de opción en el desplegable cambiando de foto,
+      por defecto muestra una imagen de wall-e en "marco" " -->
+      <select class="clases" onchange="selectedOption()" name="" id="cultivo">
+        <option value="" selected>-Selecciona-</option>
         <option value="Espárrago">Espárrago</option>
         <option value="Pimiento">Pimiento</option>
         <option value="Zanahoria">Zanahoria</option>
@@ -52,10 +51,12 @@
         <option value="Caña de azúcar">Caña de azúcar</option>
         <option value="Algodón">Algodón</option>
       </select>
-      <input id="cantidad" type="number" placeholder="Cantidad (en unidades)">
-      <button onclick="calcularProfit()">CALCULAR</button>
+      <input class="clases" id="cantidad" type="number" placeholder="Cantidad (en unidades)">
+      <!-- Al clickar el botón se ejecutará la función que mostrará los resultados -->
+      <button type="button" class="clases" onclick="calcularProfit()">CALCULAR</button>
     </form>
-    <footer class="bottom">Created by me</footer>
+    <footer id="bottom" class="bottom">Created by fans</footer>
     <script src="app.js"></script>
+
   </body>
 </html>
