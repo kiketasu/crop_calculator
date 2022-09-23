@@ -200,7 +200,10 @@ const cropInfo = [
   },
 ];
 
-//funcion que muestra la imagen correspondiente al cultivo en "marco"
+// ----------------------------------------------------------------------------------------------------------
+
+
+//funcion que muestra la imagen correspondiente al cultivo del select dentro del div "marco"
 function selectedOption() {
   let container = document.getElementById("marco");
   let selected = document.getElementById("cultivo");
@@ -210,12 +213,14 @@ function selectedOption() {
     if (selected.value === cropObject.name) {
       container.innerHTML = `<img src= "${cropObject.img}">`;
     } else if (selected.value == "default"){
-      container.innerHTML = `<img src="https://th.bing.com/th/id/OIP.mZ7TM_2MBpT9AM4WU0LSzgHaHg?pid=ImgDet&rs=1" alt="walle"></img>`
+      container.innerHTML = defaultImage;
     };
   };
 };
 
-//al clickar el boton se ejecutará la siguiente función para:
+
+//funcion que se ejecuta al clickar CALCULAR:
+
 function calcularProfit() {
   let selected = document.getElementById("cultivo");
   let inputNumber = document.getElementById("cantidad");
@@ -223,6 +228,7 @@ function calcularProfit() {
   for (const cropObject2 of cropInfo) {
     let coste = cropObject2.seedPrice * inputNumber.value;
     let beneficio = ((cropObject2.sellPrice * inputNumber.value) - coste);
+    //mostrar los datos
     if (selected.value === cropObject2.name){ 
       alert(`El coste de ${cropObject2.name} es de ${coste} monedas`)
       alert(`El beneficio neto de ${cropObject2.name} será de ${beneficio} monedas`)
@@ -238,4 +244,6 @@ function calcularProfit() {
     };
   };
 };
+
+
 
