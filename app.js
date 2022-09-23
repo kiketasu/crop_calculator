@@ -204,10 +204,13 @@ const cropInfo = [
 function selectedOption() {
   let container = document.getElementById("marco");
   let selected = document.getElementById("cultivo");
+  let defaultImage = `<img src="https://th.bing.com/th/id/OIP.mZ7TM_2MBpT9AM4WU0LSzgHaHg?pid=ImgDet&rs=1" alt="walle"></img>`
 
   for (const cropObject of cropInfo) {
     if (selected.value === cropObject.name) {
       container.innerHTML = `<img src= "${cropObject.img}">`;
+    } else if (selected.value == "default"){
+      container.innerHTML = `<img src="https://th.bing.com/th/id/OIP.mZ7TM_2MBpT9AM4WU0LSzgHaHg?pid=ImgDet&rs=1" alt="walle"></img>`
     };
   };
 };

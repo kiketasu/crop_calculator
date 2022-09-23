@@ -18,8 +18,8 @@
       <p>1.Selecciona el cultivo</p>
       <p>2.Introduce la cantidad a plantar.</p>
       <p>3.Click en "CALCULAR"</p>
-      <p>No tendrá en cuenta la duplicación de tu acompañante</p>
     </div>
+    
 
     <div id="marco"><img src="https://th.bing.com/th/id/OIP.mZ7TM_2MBpT9AM4WU0LSzgHaHg?pid=ImgDet&rs=1" alt="walle"></div>
 
@@ -27,7 +27,7 @@
       <!-- La función "selectedOption" se ejecuta al cambiar de opción en el desplegable cambiando de foto,
       por defecto muestra una imagen de wall-e en "marco" " -->
       <select class="clases" onchange="selectedOption()" name="" id="cultivo">
-        <option value="" selected>-Selecciona-</option>
+        <option value="default" selected>-Selecciona-</option>
         <option value="Espárrago">Espárrago</option>
         <option value="Pimiento">Pimiento</option>
         <option value="Zanahoria">Zanahoria</option>
@@ -55,6 +55,7 @@
       <!-- Al clickar el botón se ejecutará la función que mostrará los resultados -->
       <button type="button" class="clases" onclick="calcularProfit()">CALCULAR</button>
     </form>
+    <p class="tip">Atención: los cálculos NO tienen en cuenta la duplicación de tu acompañante</p>
     <footer id="bottom" class="bottom">Created by fans</footer>
     <script src="app.js"></script>
 

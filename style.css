@@ -60,3 +60,8 @@ img {
   height: 200px;
 }
 
+.tip {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+}
