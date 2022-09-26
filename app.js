@@ -232,10 +232,10 @@ function calcularProfit() {
     let beneficio = ((cropObject2.sellPrice * inputNumber.value) - coste);
     //mostrar los datos
     if (selected.value === cropObject2.name){ 
-      resultadoFinal.innerHTML = `El coste de ${cropObject2.name} es de ${coste} monedas`
-      resultadoFinal.innerHTML += `El beneficio neto de ${cropObject2.name} será de ${beneficio} monedas`
-      resultadoFinal.innerHTML += `${cropObject2.name} debe plantarse en "${cropObject2.location}"`
-      resultadoFinal.innerHTML += `${cropObject2.name} deberá regarse ${cropObject2.waters} veces`
+      resultadoFinal.innerHTML = `El coste de ${cropObject2.name} es de ${coste} monedas <br>`
+      resultadoFinal.innerHTML += `El beneficio neto de ${cropObject2.name} será de ${beneficio} monedas <br>`
+      resultadoFinal.innerHTML += `${cropObject2.name} debe plantarse en "${cropObject2.location}" <br>`
+      resultadoFinal.innerHTML += `${cropObject2.name} deberá regarse ${cropObject2.waters} veces <br>`
       //pasar el tiempo de horas a minutos cuando es menor a 1 hora.
       if (cropObject2.time < 1){
         let timeMinutes = cropObject2.time * 60;
