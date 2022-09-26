@@ -220,6 +220,8 @@ function selectedOption() {
 
 
 //funcion que se ejecuta al clickar CALCULAR:
+//hacemos referencia donde se va a imprimir el resultado
+let resultadoFinal = document.querySelector('#resultadoFinal')
 
 function calcularProfit() {
   let selected = document.getElementById("cultivo");
@@ -230,19 +232,26 @@ function calcularProfit() {
     let beneficio = ((cropObject2.sellPrice * inputNumber.value) - coste);
     //mostrar los datos
     if (selected.value === cropObject2.name){ 
-      alert(`El coste de ${cropObject2.name} es de ${coste} monedas`)
-      alert(`El beneficio neto de ${cropObject2.name} será de ${beneficio} monedas`)
-      alert(`${cropObject2.name} debe plantarse en "${cropObject2.location}"`)
-      alert(`${cropObject2.name} deberá regarse ${cropObject2.waters} veces`)
+      resultadoFinal.innerHTML = `El coste de ${cropObject2.name} es de ${coste} monedas`
+      resultadoFinal.innerHTML += `El beneficio neto de ${cropObject2.name} será de ${beneficio} monedas`
+      resultadoFinal.innerHTML += `${cropObject2.name} debe plantarse en "${cropObject2.location}"`
+      resultadoFinal.innerHTML += `${cropObject2.name} deberá regarse ${cropObject2.waters} veces`
       //pasar el tiempo de horas a minutos cuando es menor a 1 hora.
       if (cropObject2.time < 1){
         let timeMinutes = cropObject2.time * 60;
-        alert(`${cropObject2.name} tardará ${timeMinutes} minutos en crecer aproximadamente`)
+        resultadoFinal.innerHTML += `${cropObject2.name} tardará ${timeMinutes} minutos en crecer aproximadamente`
       } else {
-        alert(`${cropObject2.name} tardará ${cropObject2.time} horas en crecer aproximadamente`)
+        resultadoFinal.innerHTML += `${cropObject2.name} tardará ${cropObject2.time} horas en crecer aproximadamente`
       };
     };
   };
+  //quiero que solo se muestre el div cuando se haga click, mientras no este display:none
+  resultadoFinal.style.display = "";
+};
+
+//quiero que el boton reset ponga el contenido de div vacio
+function reset(){
+  resultadoFinal.innerHTML = "Hola"
 };
 
 
