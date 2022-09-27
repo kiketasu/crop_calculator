@@ -19,9 +19,13 @@
       <p>2.Introduce la cantidad a plantar.</p>
       <p>3.Click en "CALCULAR"</p>
     </div>
-    
 
-    <div id="marco"><img src="https://th.bing.com/th/id/OIP.mZ7TM_2MBpT9AM4WU0LSzgHaHg?pid=ImgDet&rs=1" alt="walle"></div>
+    <div id="marco">
+      <img
+        src="https://th.bing.com/th/id/OIP.mZ7TM_2MBpT9AM4WU0LSzgHaHg?pid=ImgDet&rs=1"
+        alt="walle"
+      />
+    </div>
 
     <form id="selector">
       <!-- La función "selectedOption" se ejecuta al cambiar de opción en el desplegable cambiando de foto,
@@ -51,16 +55,25 @@
         <option value="Caña de azúcar">Caña de azúcar</option>
         <option value="Algodón">Algodón</option>
       </select>
-      <input class="clases" id="cantidad" type="number" placeholder="Cantidad (en unidades)">
+      <input
+        class="clases"
+        id="cantidad"
+        type="number"
+        placeholder="Cantidad (en unidades)"
+      />
       <!-- Al clickar el botón se ejecutará la función que mostrará los resultados -->
-      <button type="button" class="clases" onclick="calcularProfit()">CALCULAR</button>
-    <button type="button" class="clases" onclick="reset()">RESET</button>
+      <button type="button" class="clases" onclick="calcularProfit()">
+        CALCULAR
+      </button>
+      <button type="button" class="clases" onclick="reset()">RESET</button>
     </form>
-    <p class="tip">Atención: los cálculos NO tienen en cuenta la duplicación de tu acompañante</p>
+    <p class="tip">
+      Atención: los cálculos NO tienen en cuenta la duplicación de tu
+      acompañante
+    </p>
     <div id="resultadoFinal"></div>
-    
+
     <footer id="bottom" class="bottom">Created by fans</footer>
     <script src="app.js"></script>
-
   </body>
 </html>

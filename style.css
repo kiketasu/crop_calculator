@@ -68,8 +68,23 @@ img {
 
 #resultadoFinal {
   width: 100%;
-  height: 100px;
+  height: auto;
+  border-radius: 5px;
+  padding: 8px;
+  margin-top:5px;
   background-color: aliceblue;
   color: black;
   text-align: left;
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  #selector{
+    display: flex;
+    flex-direction: column;
+  }
+  .clases{
+    padding: 8px;
+    margin: 2px;
+  }
 }
