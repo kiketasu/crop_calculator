@@ -1,17 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 body {
-  background: #8e2de2; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #4a00e0,
-    #8e2de2
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #4a00e0,
-    #8e2de2
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: rgb(255, 255, 255);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: rgb(104,28,184);
+  background: linear-gradient(0deg, rgba(104,28,184,1) 0%, rgba(25,28,66,1) 100%);
+  color: aliceblue;
+  font-family: 'Nunito', sans-serif;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -20,16 +13,50 @@ body {
 
 }
 h1 {
+  color: #ccc;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    margin-top: 0;
+    border: 5px solid #b9ad8f;
+    border-radius: 34px;
+    text-align: center;
+    background: #2a2d63;
+    padding: 8px 64px;
+    display: inline-block;
+    position: relative;
   font-weight: 100;
   font-size:50px;
 }
 
+h1:before {
+  content: "♦";
+  position: absolute;
+  left: -20px;
+  color: #af913c;
+  text-shadow: 8px 0px #b9ad8f, 0px 10px #b9ad8f, 0px -10px #b9ad8f, -8px 0px #b9ad8f;
+  font-size: 64px;
+  top: 0;
+  transform: scale(1,0.5);
+}
+
+h1:after {
+  content: "♦";
+  position: absolute;
+  right: -20px;
+  color: #af913c;
+  text-shadow: 8px 0px #b9ad8f, 0px 10px #b9ad8f, 0px -10px #b9ad8f, -8px 0px #b9ad8f;
+  font-size: 64px;
+  top: 0;
+  transform: scale(1,0.5);
+}
+
 .howTo {
-  font-weight: 100;
+  font-weight:500;
   background-color: #8e2de2;
   text-align: justify;
   padding: 0 35px 0 35px;
   border-radius: 15px;
+  text-align: center;
 }
 
 #marco {
@@ -49,6 +76,7 @@ h1 {
 .clases {
  font-family: Verdana, Geneva, Tahoma, sans-serif;
  border-radius: 5px;
+ text-align: center;
 }
 
 button:hover {
@@ -61,13 +89,13 @@ img {
 }
 
 .tip {
-  font-size: 10px;
+  font-size: 15px;
   font-weight: bold;
   text-align: center;
 }
 
 #resultadoFinal {
-  width: 100%;
+  width: auto;
   height: auto;
   border-radius: 5px;
   padding: 8px;
@@ -77,6 +105,7 @@ img {
   text-align: left;
   display: none;
 }
+
 
 @media only screen and (max-width: 500px) {
   #selector{

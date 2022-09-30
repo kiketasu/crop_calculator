@@ -1,23 +1,24 @@
-<html></html>
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora DLV</title>
+    <title>Crop Calculator</title>
+    <link rel="shortcut icon" type="image/png" href="https://bit.ly/3rigzdB"/>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>Calculadora de cosecha DLV</h1>
+      <h1>DLV Crop Calculator</h1>
     </header>
 
     <div class="howTo">
-      <h2>Cómo se usa:</h2>
-      <p>1.Selecciona el cultivo</p>
-      <p>2.Introduce la cantidad a plantar.</p>
-      <p>3.Click en "CALCULAR"</p>
+      <h2>Instructions:</h2>
+      <p>1.Select the crop.</p>
+      <p>2.Set the amount.</p>
+      <p>3.Click on "CALCULATE".</p>
+      <p>Click "RESET" to start again.</p>
     </div>
 
     <div id="marco">
@@ -28,10 +29,9 @@
     </div>
 
     <form id="selector">
-      <!-- La función "selectedOption" se ejecuta al cambiar de opción en el desplegable cambiando de foto,
-      por defecto muestra una imagen de wall-e en "marco" " -->
+      
       <select class="clases" onchange="selectedOption()" name="" id="cultivo">
-        <option value="default" selected>-Selecciona-</option>
+        <option value="default" selected>-Select-</option>
         <option value="Espárrago">Espárrago</option>
         <option value="Pimiento">Pimiento</option>
         <option value="Zanahoria">Zanahoria</option>
@@ -59,21 +59,24 @@
         class="clases"
         id="cantidad"
         type="number"
-        placeholder="Cantidad (en unidades)"
+        placeholder="Amount (in units)"
       />
       <!-- Al clickar el botón se ejecutará la función que mostrará los resultados -->
       <button type="button" class="clases" onclick="calcularProfit()">
-        CALCULAR
+        CALCULATE
       </button>
-      <button type="button" class="clases" onclick="reset()">RESET</button>
+
+      <button type="button" class="clases" onclick="resetAll()">
+       RESET
+      </button>
+    
     </form>
     <p class="tip">
-      Atención: los cálculos NO tienen en cuenta la duplicación de tu
-      acompañante
+      Atention: This calculator cannot calculate duplicated crops.
     </p>
     <div id="resultadoFinal"></div>
 
-    <footer id="bottom" class="bottom">Created by fans</footer>
+    <footer id="bottom" class="bottom">Created by fans and for fans</footer>
     <script src="app.js"></script>
   </body>
 </html>

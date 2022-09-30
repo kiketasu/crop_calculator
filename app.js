@@ -202,6 +202,21 @@ const cropInfo = [
 
 // ----------------------------------------------------------------------------------------------------------
 
+let selected = document.getElementById("cultivo");
+let inputNumber = document.getElementById("cantidad");
+let container = document.getElementById("marco");
+let defaultImage = `<img src="https://th.bing.com/th/id/OIP.mZ7TM_2MBpT9AM4WU0LSzgHaHg?pid=ImgDet&rs=1" alt="walle"></img>`
+
+function resetAll() {
+  resultadoFinal.innerHTML = "";
+  resultadoFinal.style.display = "none";
+  selected.value = "default";
+  inputNumber.value = "";
+  container.innerHTML = defaultImage;
+
+  
+}
+
 
 //funcion que muestra la imagen correspondiente al cultivo del select dentro del div "marco"
 function selectedOption() {
@@ -219,10 +234,10 @@ function selectedOption() {
 };
 
 
+
 //funcion que se ejecuta al clickar CALCULAR:
 //hacemos referencia donde se va a imprimir el resultado
 let resultadoFinal = document.querySelector('#resultadoFinal')
-
 function calcularProfit() {
   resultadoFinal.style.display = "block";
   let selected = document.getElementById("cultivo");
@@ -233,25 +248,22 @@ function calcularProfit() {
     let beneficio = ((cropObject2.sellPrice * inputNumber.value) - coste);
     //mostrar los datos
     if (selected.value === cropObject2.name){ 
-      resultadoFinal.innerHTML = `- El coste de ${cropObject2.name} es de ${coste} monedas. <br>`
-      resultadoFinal.innerHTML += `- El beneficio neto de ${cropObject2.name} será de ${beneficio} monedas. <br>`
-      resultadoFinal.innerHTML += `- ${cropObject2.name} debe plantarse en "${cropObject2.location}". <br>`
-      resultadoFinal.innerHTML += `- ${cropObject2.name} deberá regarse ${cropObject2.waters} veces. <br>`
+      resultadoFinal.innerHTML = `- The cost of buying ${cropObject2.name} seeds will be ${coste} star coins. <br>`
+      resultadoFinal.innerHTML += `- The net profit will be ${beneficio} star coins (Net profit = final profit - crop cost). <br>`
+      resultadoFinal.innerHTML += `- ${cropObject2.name} must be planted on "${cropObject2.location}". <br>`
+      resultadoFinal.innerHTML += `- ${cropObject2.name} must be watered ${cropObject2.waters} times. <br>`
       //pasar el tiempo de horas a minutos cuando es menor a 1 hora.
       if (cropObject2.time < 1){
         let timeMinutes = cropObject2.time * 60;
-        resultadoFinal.innerHTML += `- ${cropObject2.name} tardará ${timeMinutes} minutos en crecer aproximadamente.`
+        resultadoFinal.innerHTML += `- ${cropObject2.name} will take ${timeMinutes} minutes to grow approximately (if watered when needed).`
       } else {
-        resultadoFinal.innerHTML += `- ${cropObject2.name} tardará ${cropObject2.time} horas en crecer aproximadamente.`
+        resultadoFinal.innerHTML += `- ${cropObject2.name} will take ${cropObject2.time} hours to grow approximately (if watered when needed).`
       };
     };
   };
 };
 
 //quiero que el boton reset vuelva el div a none (no va)
-function reset(){
-  resultadoFinal.style.display = "none";
-};
 
 
 
