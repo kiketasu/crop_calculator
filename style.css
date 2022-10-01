@@ -81,14 +81,19 @@ h1:after {
  border-radius: 5px;
  text-align: center;
 }
+
 .calculate:hover {
   background-color: 
   rgb(50, 198, 36);
+  cursor: pointer;
   }
+
 .reset:hover {
 background-color: 
 rgb(255, 0, 0);
+cursor: pointer;
 }
+
 img {
   width: 200px;
   aspect-ratio: 1;
@@ -113,7 +118,9 @@ img {
   display: none;
 }
 
-#id {}
+#emailMe:link {
+  color: yellow
+}
 
 /* responsive for mobiles */
 @media only screen and (max-width: 500px) {

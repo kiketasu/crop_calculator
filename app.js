@@ -250,16 +250,16 @@ function calcularProfit() {
     let beneficio = ((cropObject2.sellPrice * inputNumber.value) - coste);
 //print on final result div
     if (selected.value === cropObject2.name){ 
-      resultadoFinal.innerHTML = `- The cost of buying ${cropObject2.name} seeds will be ${coste} star coins. <br>`
-      resultadoFinal.innerHTML += `- The net profit will be ${beneficio} star coins (Net profit = final profit - crop cost). <br>`
-      resultadoFinal.innerHTML += `- ${cropObject2.name} must be planted on "${cropObject2.location}". <br>`
-      resultadoFinal.innerHTML += `- ${cropObject2.name} must be watered ${cropObject2.waters} times. <br>`
+      resultadoFinal.innerHTML = `- The <span style= "color: Red;">cost</span> of buying <strong>${cropObject2.name}</strong> seeds will be <strong>${coste}</strong> star coins. <br>`
+      resultadoFinal.innerHTML += `- The <span style= "color: Green;">net profit</span> will be <strong>${beneficio}</strong> star coins <i>(Net profit = final profit - crop cost)</i>. <br>`
+      resultadoFinal.innerHTML += `- ${cropObject2.name} must be planted on <strong>"${cropObject2.location}"</strong>. <br>`
+      resultadoFinal.innerHTML += `- ${cropObject2.name} must be watered <strong>${cropObject2.waters} times</strong>. <br>`
 //convert hours to minutes when format is decimals on hours.
       if (cropObject2.time < 1){
         let timeMinutes = cropObject2.time * 60;
-        resultadoFinal.innerHTML += `- ${cropObject2.name} will take ${timeMinutes} minutes to grow approximately (if watered when needed).`
+        resultadoFinal.innerHTML += `- ${cropObject2.name} will take <strong>${timeMinutes} minutes </strong> to grow approximately (if watered when needed).`
       } else {
-        resultadoFinal.innerHTML += `- ${cropObject2.name} will take ${cropObject2.time} hours to grow approximately (if watered when needed).`
+        resultadoFinal.innerHTML += `- ${cropObject2.name} will take <strong>${cropObject2.time} hours</strong> to grow approximately (if watered when needed).`
       };
     };
   };
