@@ -66,6 +66,9 @@ h1:after {
   margin: 20px;
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.65);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.65);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.65);
 }
 
 .bottom {
@@ -78,20 +81,24 @@ h1:after {
  border-radius: 5px;
  text-align: center;
 }
-
-button:hover {
+.calculate:hover {
+  background-color: 
+  rgb(50, 198, 36);
+  }
+.reset:hover {
 background-color: 
-yellow;
+rgb(255, 0, 0);
 }
 img {
   width: 200px;
-  height: 200px;
+  aspect-ratio: 1;
 }
 
 .tip {
   font-size: 15px;
   font-weight: bold;
   text-align: center;
+  color: #fef43c;
 }
 
 #resultadoFinal {
@@ -106,7 +113,9 @@ img {
   display: none;
 }
 
+#id {}
 
+/* responsive for mobiles */
 @media only screen and (max-width: 500px) {
   #selector{
     display: flex;

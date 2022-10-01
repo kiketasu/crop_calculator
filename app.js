@@ -1,8 +1,8 @@
-//todos los datos relevantes de todos los cultivos en DLV a dia 21/09/22*
+//all data up to date on 01/10/22 , extracted from --->  https://docs.google.com/file/d/10S0juAi9CEUnQV3MjBsFcMfuSrHFdjjL/edit?filetype=msexcel
 const cropInfo = [
   {
-    name: "Espárrago",
-    location: "Cumbres Heladas",
+    name: "Asparagus",
+    location: "Frosted Heights",
     seedPrice: 150,
     time: 2.25,
     sellPrice: 399,
@@ -10,8 +10,8 @@ const cropInfo = [
     img: "https://dreamlightvalley.wikizet.com/english/images/4/45/Asparagus.png",
   },
   {
-    name: "Pimiento",
-    location: "Bosque de la Valentía",
+    name: "Bell Pepper",
+    location: "Forest of Valor",
     seedPrice: 12,
     time: 0.25,
     sellPrice: 33,
@@ -19,8 +19,8 @@ const cropInfo = [
     img: "https://dreamlightvalley.wikizet.com/english/images/e/e2/Bell_Pepper.png",
   },
   {
-    name: "Zanahoria",
-    location: "Pradera Pacífica",
+    name: "Carrot",
+    location: "Peaceful Meadow",
     seedPrice: 10,
     time: 0.25,
     sellPrice: 44,
@@ -28,8 +28,8 @@ const cropInfo = [
     img: "https://dreamlightvalley.wikizet.com/english/images/c/c3/Carrot.png",
   },
   {
-    name: "Chile",
-    location: "Meseta Soleada",
+    name: "Chili Pepper",
+    location: "Sunlit Plateau",
     seedPrice: 20,
     time: 0.75,
     sellPrice: 78,
@@ -37,8 +37,8 @@ const cropInfo = [
     img: "https://dreamlightvalley.wikizet.com/english/images/a/ab/Chili_Pepper.png",
   },
   {
-    name: "Pepino",
-    location: "Cumbres Heladas",
+    name: "Cucumber",
+    location: "Frosted Heights",
     seedPrice: 40,
     time: 1.25,
     sellPrice: 159,
@@ -46,8 +46,8 @@ const cropInfo = [
     img: "https://dreamlightvalley.wikizet.com/english/images/5/59/Cucumber.png",
   },
   {
-    name: "Berenjena",
-    location: "Cumbres Heladas",
+    name: "Eggplant",
+    location: "Frosted Heights",
     seedPrice: 95,
     time: 3,
     sellPrice: 308,
@@ -55,8 +55,8 @@ const cropInfo = [
     img: "https://dreamlightvalley.wikizet.com/english/images/8/8f/Eggplant.png",
   },
   {
-    name: "Puerro",
-    location: "Tierras Olvidadas",
+    name: "Leek",
+    location: "Forgotten Lands",
     seedPrice: 120,
     time: 2,
     sellPrice: 309,
@@ -64,8 +64,8 @@ const cropInfo = [
     img: "https://dreamlightvalley.wikizet.com/english/images/5/57/Leek.png",
   },
   {
-    name: "Lechuga",
-    location: "Pradera Pacífica",
+    name: "Lettuce",
+    location: "Peaceful Meadow",
     seedPrice: 3,
     time: 0.05,
     sellPrice: 8,
@@ -74,7 +74,7 @@ const cropInfo = [
   },
   {
     name: "Okra",
-    location: "Claro de la Confianza",
+    location: "Glade of Trust",
     seedPrice: 135,
     time: 2,
     sellPrice: 342,
@@ -82,8 +82,8 @@ const cropInfo = [
     img: "https://dreamlightvalley.wikizet.com/english/images/e/e7/Okra.png",
   },
   {
-    name: "Cebolla",
-    location: "Bosque de la Valentía",
+    name: "Onion",
+    location: "Forest of Valor",
     seedPrice: 50,
     time: 1.25,
     sellPrice: 170,
@@ -91,8 +91,8 @@ const cropInfo = [
     img: "https://dreamlightvalley.wikizet.com/english/images/5/51/Onion.png",
   },
   {
-    name: "Patata",
-    location: "Tierras Olvidadas",
+    name: "Potato",
+    location: "Forgotten Lands",
     seedPrice: 55,
     time: 0.6,
     sellPrice: 126,
@@ -100,8 +100,8 @@ const cropInfo = [
     img: "https://dreamlightvalley.wikizet.com/english/images/c/c2/Potato.png",
   },
   {
-    name: "Calabaza",
-    location: "Tierras Olvidadas",
+    name: "Pumpkin",
+    location: "Forgotten Lands",
     seedPrice: 275,
     time: 4,
     sellPrice: 664,
@@ -109,8 +109,8 @@ const cropInfo = [
     img: "https://dreamlightvalley.wikizet.com/english/images/6/64/Pumpkin.png",
   },
   {
-    name: "Espinaca",
-    location: "Claro de la Confianza",
+    name: "Spinach",
+    location: "Glade of Trust",
     seedPrice: 45,
     time: 1,
     sellPrice: 123,
@@ -118,8 +118,8 @@ const cropInfo = [
     img: "https://dreamlightvalley.wikizet.com/english/images/6/60/Spinach.png",
   },
   {
-    name: "Tomate",
-    location: "Playa Deslumbrante",
+    name: "Tomato",
+    location: "Dazzle Beach",
     seedPrice: 8,
     time: 0.4,
     sellPrice: 66,
@@ -127,8 +127,8 @@ const cropInfo = [
     img: "https://dreamlightvalley.wikizet.com/english/images/9/9d/Tomato.png",
   },
   {
-    name: "Calabacín",
-    location: "Meseta Soleada",
+    name: "Zucchini",
+    location: "Sunlit Plateau",
     seedPrice: 30,
     time: 0.67,
     sellPrice: 104,
@@ -136,8 +136,8 @@ const cropInfo = [
     img: "https://dreamlightvalley.wikizet.com/english/images/f/f6/Zucchini.png",
   },
   {
-    name: "Arroz",
-    location: "Claro de la Confianza",
+    name: "Rice",
+    location: "Glade of Trust",
     seedPrice: 35,
     time: 0.83,
     sellPrice: 122,
@@ -145,8 +145,8 @@ const cropInfo = [
     img: "https://dreamlightvalley.wikizet.com/english/images/d/da/Rice.png",
   },
   {
-    name: "Trigo",
-    location: "Pradera Pacífica",
+    name: "Wheat",
+    location: "Peaceful Meadow",
     seedPrice: 1,
     time: 0.017,
     sellPrice: 4,
@@ -155,7 +155,7 @@ const cropInfo = [
   },
   {
     name: "Canola",
-    location: "Bosque de la Valentía",
+    location: "Forest of Valor",
     seedPrice: 25,
     time: 0.6,
     sellPrice: 109,
@@ -163,8 +163,8 @@ const cropInfo = [
     img: "https://dreamlightvalley.wikizet.com/english/images/7/79/Canola.png",
   },
   {
-    name: "Maíz",
-    location: "Playa Deslumbrante",
+    name: "Corn",
+    location: "Dazzle Beach",
     seedPrice: 15,
     time: 0.2,
     sellPrice: 32,
@@ -172,8 +172,8 @@ const cropInfo = [
     img: "https://dreamlightvalley.wikizet.com/english/images/f/f8/Corn.png",
   },
   {
-    name: "Soja",
-    location: "Meseta Soleada",
+    name: "Soya",
+    location: "Sunlit Plateau",
     seedPrice: 60,
     time: 1.5,
     sellPrice: 207,
@@ -181,8 +181,8 @@ const cropInfo = [
     img: "https://dreamlightvalley.wikizet.com/english/images/0/00/Soya.png",
   },
   {
-    name: "Caña de azúcar",
-    location: "Playa Deslumbrante",
+    name: "Sugarcane",
+    location: "Dazzle Beach",
     seedPrice: 5,
     time: 0.12,
     sellPrice: 19,
@@ -190,8 +190,8 @@ const cropInfo = [
     img: "https://dreamlightvalley.wikizet.com/english/images/0/03/Sugarcane.png",
   },
   {
-    name: "Algodón",
-    location: "Meseta Soleada",
+    name: "Cotton",
+    location: "Sunlit Plateau",
     seedPrice: 42,
     time: 0.42,
     sellPrice: 37,
@@ -202,23 +202,26 @@ const cropInfo = [
 
 // ----------------------------------------------------------------------------------------------------------
 
+//query selectors:
+//select
 let selected = document.getElementById("cultivo");
+ //input
 let inputNumber = document.getElementById("cantidad");
+ //img container
 let container = document.getElementById("marco");
-let defaultImage = `<img src="https://th.bing.com/th/id/OIP.mZ7TM_2MBpT9AM4WU0LSzgHaHg?pid=ImgDet&rs=1" alt="walle"></img>`
+//wall-e default img
+let defaultImage = `<img src="https://th.bing.com/th/id/OIP.mZ7TM_2MBpT9AM4WU0LSzgHaHg?pid=ImgDet&rs=1" alt="walle"></img>`;
 
+//function to reset all content
 function resetAll() {
   resultadoFinal.innerHTML = "";
   resultadoFinal.style.display = "none";
   selected.value = "default";
   inputNumber.value = "";
   container.innerHTML = defaultImage;
+};
 
-  
-}
-
-
-//funcion que muestra la imagen correspondiente al cultivo del select dentro del div "marco"
+//function that shows selected crop into img container
 function selectedOption() {
   let container = document.getElementById("marco");
   let selected = document.getElementById("cultivo");
@@ -233,26 +236,25 @@ function selectedOption() {
   };
 };
 
-
-
-//funcion que se ejecuta al clickar CALCULAR:
-//hacemos referencia donde se va a imprimir el resultado
+//query selector where display final result
 let resultadoFinal = document.querySelector('#resultadoFinal')
+
+//function executed on click CALCULATE:
 function calcularProfit() {
   resultadoFinal.style.display = "block";
   let selected = document.getElementById("cultivo");
   let inputNumber = document.getElementById("cantidad");
-  // calcular coste del cultivo; beneficio neto; zona de plantación; riego y tiempo
+//operations to calculate cost, net profi and show: where to plant, watering times.
   for (const cropObject2 of cropInfo) {
     let coste = cropObject2.seedPrice * inputNumber.value;
     let beneficio = ((cropObject2.sellPrice * inputNumber.value) - coste);
-    //mostrar los datos
+//print on final result div
     if (selected.value === cropObject2.name){ 
       resultadoFinal.innerHTML = `- The cost of buying ${cropObject2.name} seeds will be ${coste} star coins. <br>`
       resultadoFinal.innerHTML += `- The net profit will be ${beneficio} star coins (Net profit = final profit - crop cost). <br>`
       resultadoFinal.innerHTML += `- ${cropObject2.name} must be planted on "${cropObject2.location}". <br>`
       resultadoFinal.innerHTML += `- ${cropObject2.name} must be watered ${cropObject2.waters} times. <br>`
-      //pasar el tiempo de horas a minutos cuando es menor a 1 hora.
+//convert hours to minutes when format is decimals on hours.
       if (cropObject2.time < 1){
         let timeMinutes = cropObject2.time * 60;
         resultadoFinal.innerHTML += `- ${cropObject2.name} will take ${timeMinutes} minutes to grow approximately (if watered when needed).`
@@ -262,8 +264,6 @@ function calcularProfit() {
     };
   };
 };
-
-//quiero que el boton reset vuelva el div a none (no va)
 
 
 

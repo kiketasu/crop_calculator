@@ -14,10 +14,10 @@
     </header>
 
     <div class="howTo">
-      <h2>Instructions:</h2>
-      <p>1.Select the crop.</p>
-      <p>2.Set the amount.</p>
-      <p>3.Click on "CALCULATE".</p>
+      <h2>How to use:</h2>
+      <p>1. Select the crop.</p>
+      <p>2. Set the amount.</p>
+      <p>3. Click on "CALCULATE".</p>
       <p>Click "RESET" to start again.</p>
     </div>
 
@@ -32,28 +32,28 @@
       
       <select class="clases" onchange="selectedOption()" name="" id="cultivo">
         <option value="default" selected>-Select-</option>
-        <option value="Espárrago">Espárrago</option>
-        <option value="Pimiento">Pimiento</option>
-        <option value="Zanahoria">Zanahoria</option>
-        <option value="Chile">Chile</option>
-        <option value="Pepino">Pepino</option>
-        <option value="Berenjena">Berenjena</option>
-        <option value="Puerro">Puerro</option>
-        <option value="Lechuga">Lechuga</option>
+        <option value="Asparagus">Asparagus</option>
+        <option value="Bell Pepper">Bell Pepper</option>
+        <option value="Carrot">Carrot</option>
+        <option value="Chili Pepper">Chili Pepper</option>
+        <option value="Cucumber">Cucumber</option>
+        <option value="Eggplant">Eggplant</option>
+        <option value="Leek">Leek</option>
+        <option value="Lettuce">Lettuce</option>
         <option value="Okra">Okra</option>
-        <option value="Cebolla">Cebolla</option>
-        <option value="Patata">Patata</option>
-        <option value="Calabaza">Calabaza</option>
-        <option value="Espinaca">Espinaca</option>
-        <option value="Tomate">Tomate</option>
-        <option value="Calabacín">Calabacín</option>
-        <option value="Arroz">Arroz</option>
-        <option value="Trigo">Trigo</option>
+        <option value="Onion">Onion</option>
+        <option value="Potato">Potato</option>
+        <option value="Pumpkin">Pumpkin</option>
+        <option value="Spinach">Spinach</option>
+        <option value="Tomato">Tomato</option>
+        <option value="Zucchini">Zucchini</option>
+        <option value="Rice">Rice</option>
+        <option value="Wheat">Wheat</option>
         <option value="Canola">Canola</option>
-        <option value="Maíz">Maíz</option>
-        <option value="Soja">Soja</option>
-        <option value="Caña de azúcar">Caña de azúcar</option>
-        <option value="Algodón">Algodón</option>
+        <option value="Corn">Corn</option>
+        <option value="Soya">Soya</option>
+        <option value="Sugarcane">Sugarcane</option>
+        <option value="Cotton">Cotton</option>
       </select>
       <input
         class="clases"
@@ -62,21 +62,23 @@
         placeholder="Amount (in units)"
       />
       <!-- Al clickar el botón se ejecutará la función que mostrará los resultados -->
-      <button type="button" class="clases" onclick="calcularProfit()">
+      <button type="button" class="clases calculate" onclick="calcularProfit()">
         CALCULATE
       </button>
 
-      <button type="button" class="clases" onclick="resetAll()">
+      <button type="button" class="clases reset" onclick="resetAll()">
        RESET
       </button>
     
     </form>
     <p class="tip">
-      Atention: This calculator cannot calculate duplicated crops.
+      ⚠️Attention: This calculator cannot calculate duplicated crops.⚠️
     </p>
     <div id="resultadoFinal"></div>
 
-    <footer id="bottom" class="bottom">Created by fans and for fans</footer>
+    <footer id="bottom" class="bottom">Created by fans and for fans <br>
+      <a id="emailMe" href="mailto:example@website.com">e-mail the creator</a>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>
