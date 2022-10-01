@@ -103,7 +103,7 @@ img {
   font-size: 15px;
   font-weight: bold;
   text-align: center;
-  color: #fef43c;
+  font-weight: lighter;
 }
 
 #resultadoFinal {
@@ -119,7 +119,7 @@ img {
 }
 
 #emailMe:link {
-  color: yellow
+  color: yellow;
 }
 
 /* responsive for mobiles */
