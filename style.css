@@ -1,74 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 body {
-  background: rgb(104,28,184);
-  background: linear-gradient(0deg, rgba(104,28,184,1) 0%, rgba(25,28,66,1) 100%);
+  background: rgb(104, 28, 184);
+  background: linear-gradient(
+    0deg,
+    rgba(104, 28, 184, 1) 0%,
+    rgba(25, 28, 66, 1) 100%
+  );
   color: aliceblue;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 50px;
-
 }
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #00d1ae;
+  opacity: 0.8;
+  color: #111;
+  border: 3px solid #00d1ae;
+  font-weight: bold;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px 0px 10px 10px;
+}
+
 h1 {
   color: #ccc;
-    font-size: 2.5em;
-    margin-bottom: 1em;
-    margin-top: 0;
-    border: 5px solid #b9ad8f;
-    border-radius: 34px;
-    text-align: center;
-    background: #2a2d63;
-    padding: 8px 64px;
-    display: inline-block;
-    position: relative;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  margin-top: 0;
+  border: 5px solid #b9ad8f;
+  border-radius: 34px;
+  text-align: center;
+  background: #2a2d63;
+  padding: 8px 64px;
+  display: inline-block;
   font-weight: 100;
-  font-size:50px;
+  font-size: 50px;
 }
 
-h1:before {
-  content: "♦";
-  position: absolute;
-  left: -20px;
-  color: #af913c;
-  text-shadow: 8px 0px #b9ad8f, 0px 10px #b9ad8f, 0px -10px #b9ad8f, -8px 0px #b9ad8f;
-  font-size: 64px;
-  top: 0;
-  transform: scale(1,0.5);
-}
 
-h1:after {
-  content: "♦";
-  position: absolute;
-  right: -20px;
-  color: #af913c;
-  text-shadow: 8px 0px #b9ad8f, 0px 10px #b9ad8f, 0px -10px #b9ad8f, -8px 0px #b9ad8f;
-  font-size: 64px;
-  top: 0;
-  transform: scale(1,0.5);
-}
+
+
 
 .howTo {
-  font-weight:500;
+  font-weight: 500;
   background-color: #8e2de2;
   text-align: justify;
-  padding: 0 35px 0 35px;
+  padding: 0 8px 0 8px;
   border-radius: 15px;
   text-align: center;
+  line-height: 10px;
 }
 
 #marco {
   width: 200px;
   height: 200px;
   padding: 10px;
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.65);
--webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.65);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.65);
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.58);
+  -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.58);
+}
+
+button {
+  padding: 10px 5px;
+  color: violet;
+  background-color: white;
+  border: none;
+  margin: 2px;
 }
 
 .bottom {
@@ -77,25 +87,34 @@ h1:after {
 }
 
 .clases {
- font-family: Verdana, Geneva, Tahoma, sans-serif;
- border-radius: 5px;
- text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+}
+
+.desplega {
+  margin-top: 2px;
+  margin-bottom: 10px;
+  padding: 1px;
+}
+
+.clases:hover {
+  cursor: pointer;
 }
 
 .calculate:hover {
-  background-color: 
-  rgb(50, 198, 36);
+  background-color: rgb(50, 198, 36);
   cursor: pointer;
-  }
+}
 
 .reset:hover {
-background-color: 
-rgb(255, 0, 0);
-cursor: pointer;
+  background-color: rgb(255, 0, 0);
+  cursor: pointer;
 }
 
 img {
-  width: 200px;
+  width: 100%;
   aspect-ratio: 1;
 }
 
@@ -111,7 +130,7 @@ img {
   height: auto;
   border-radius: 5px;
   padding: 8px;
-  margin-top:5px;
+  margin-top: 5px;
   background-color: aliceblue;
   color: black;
   text-align: left;
@@ -122,14 +141,23 @@ img {
   color: yellow;
 }
 
+a{
+  text-decoration: none;
+  color: #2a2d63;
+}
+
 /* responsive for mobiles */
 @media only screen and (max-width: 500px) {
-  #selector{
+  #selector {
     display: flex;
     flex-direction: column;
   }
-  .clases{
+  .clases {
     padding: 8px;
+    margin: 2px;
+  }
+  .desplega {
+    padding: 8px 47px;
     margin: 2px;
   }
 }

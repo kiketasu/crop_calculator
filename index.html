@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crop Calculator</title>
-    <link rel="shortcut icon" type="image/png" href="https://bit.ly/3rigzdB"/>
+    <link rel="shortcut icon" type="image/png" href="https://bit.ly/3rigzdB" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="fixed"> <a target="_blank" href="https://dreamlightvalley.wikizet.com/en/Disney_Dreamlight_Valley_Wiki">Go to DLV Wiki</a></div>
     <header>
       <h1>DLV Crop Calculator</h1>
     </header>
@@ -17,8 +18,8 @@
       <h2>How to use:</h2>
       <p>1. Select the crop.</p>
       <p>2. Set the amount.</p>
-      <p>3. Click on "CALCULATE".</p>
-      <p>Click "RESET" to start again.</p>
+      <p>3. Click "CALCULATE".</p>
+      <p>4. Click "RESET" to start again.</p>
     </div>
 
     <div id="marco">
@@ -27,56 +28,60 @@
         alt="walle"
       />
     </div>
+    <select
+      class="clases desplega"
+      onchange="selectedOption()"
+      name=""
+      id="cultivo"
+    >
+      <option value="default" selected>-Select-</option>
+      <option value="Asparagus">Asparagus</option>
+      <option value="Bell Pepper">Bell Pepper</option>
+      <option value="Carrot">Carrot</option>
+      <option value="Chili Pepper">Chili Pepper</option>
+      <option value="Cucumber">Cucumber</option>
+      <option value="Eggplant">Eggplant</option>
+      <option value="Leek">Leek</option>
+      <option value="Lettuce">Lettuce</option>
+      <option value="Okra">Okra</option>
+      <option value="Onion">Onion</option>
+      <option value="Potato">Potato</option>
+      <option value="Pumpkin">Pumpkin</option>
+      <option value="Spinach">Spinach</option>
+      <option value="Tomato">Tomato</option>
+      <option value="Zucchini">Zucchini</option>
+      <option value="Rice">Rice</option>
+      <option value="Wheat">Wheat</option>
+      <option value="Canola">Canola</option>
+      <option value="Corn">Corn</option>
+      <option value="Soya">Soya</option>
+      <option value="Sugarcane">Sugarcane</option>
+      <option value="Cotton">Cotton</option>
+    </select>
 
     <form id="selector">
-      
-      <select class="clases" onchange="selectedOption()" name="" id="cultivo">
-        <option value="default" selected>-Select-</option>
-        <option value="Asparagus">Asparagus</option>
-        <option value="Bell Pepper">Bell Pepper</option>
-        <option value="Carrot">Carrot</option>
-        <option value="Chili Pepper">Chili Pepper</option>
-        <option value="Cucumber">Cucumber</option>
-        <option value="Eggplant">Eggplant</option>
-        <option value="Leek">Leek</option>
-        <option value="Lettuce">Lettuce</option>
-        <option value="Okra">Okra</option>
-        <option value="Onion">Onion</option>
-        <option value="Potato">Potato</option>
-        <option value="Pumpkin">Pumpkin</option>
-        <option value="Spinach">Spinach</option>
-        <option value="Tomato">Tomato</option>
-        <option value="Zucchini">Zucchini</option>
-        <option value="Rice">Rice</option>
-        <option value="Wheat">Wheat</option>
-        <option value="Canola">Canola</option>
-        <option value="Corn">Corn</option>
-        <option value="Soya">Soya</option>
-        <option value="Sugarcane">Sugarcane</option>
-        <option value="Cotton">Cotton</option>
-      </select>
       <input
         class="clases"
         id="cantidad"
         type="number"
         placeholder="Amount (in units)"
       />
-      <!-- Al clickar el botón se ejecutará la función que mostrará los resultados -->
+
       <button type="button" class="clases calculate" onclick="calcularProfit()">
         CALCULATE
       </button>
 
       <button type="button" class="clases reset" onclick="resetAll()">
-       RESET
+        RESET
       </button>
-    
     </form>
     <p class="tip">
       ⚠️Attention: This tool cannot calculate duplicated crops by companions.⚠️
     </p>
     <div id="resultadoFinal"></div>
 
-    <footer id="bottom" class="bottom">Created by fans and for fans <br>
+    <footer id="bottom" class="bottom">
+      Created by fans and for fans <br />
       <a id="emailMe" href="mailto:kiketasu@gmail.com">Contact the creator</a>
     </footer>
     <script src="app.js"></script>
