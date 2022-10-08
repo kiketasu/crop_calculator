@@ -16,6 +16,8 @@ A very simple calculation tool made for the Disney Dreamlight Valley in-game cro
 
 · You can contact me via email using the bottom contact link.
 
+---  Try the site here  https://kiketasu.github.io/crop_calculator/  ---
+
 
 
 
