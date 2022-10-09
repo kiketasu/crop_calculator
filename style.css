@@ -13,7 +13,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
+  margin-top: 80px;
+  padding: 0px 15px;
 }
 
 .fixed {
@@ -34,7 +35,7 @@ body {
 h1 {
   color: #ccc;
   font-size: 2.5em;
-  margin-bottom: 1em;
+  margin-bottom: 30px;
   margin-top: 0;
   border: 5px solid #b9ad8f;
   border-radius: 34px;
@@ -46,8 +47,18 @@ h1 {
   font-size: 50px;
 }
 
+.context{
+  width: 450px;
+  padding: 5px;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
 
-
+.context h2{
+  padding: 5px 10px;
+}
 
 
 .howTo {
@@ -60,12 +71,16 @@ h1 {
   line-height: 10px;
 }
 
+.howTo h3{
+  font-size: 25px;
+}
+
 #marco {
   width: 200px;
   height: 200px;
   padding: 10px;
   margin-top: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
   box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.58);
@@ -73,12 +88,31 @@ h1 {
   -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.58);
 }
 
+#selector {
+  font-size: 1em;
+  width:220px;
+  display: flex;
+  flex-direction: column;
+}
+
 button {
-  padding: 10px 5px;
-  color: violet;
-  background-color: white;
+  font-weight:900;
+  color: #262956;
+  width: 100%;
+  background-color:#3ca9bb;
   border: none;
-  margin: 2px;
+}
+.clases{
+  font-size: 1em;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  margin-bottom: 6px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+}
+#cantidad{
+  padding-left: 25px;
 }
 
 .bottom {
@@ -86,30 +120,17 @@ button {
   font-size: smaller;
 }
 
-.clases {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-radius: 5px;
-  text-align: center;
-  padding: 5px;
-}
-
-.desplega {
-  margin-top: 2px;
-  margin-bottom: 10px;
-  padding: 1px;
-}
-
 .clases:hover {
   cursor: pointer;
 }
 
 .calculate:hover {
-  background-color: rgb(50, 198, 36);
+  background-color: rgb(96, 237, 101);
   cursor: pointer;
 }
 
 .reset:hover {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(230, 235, 97);
   cursor: pointer;
 }
 
@@ -126,6 +147,7 @@ img {
 }
 
 #resultadoFinal {
+  line-height: 25px;
   width: auto;
   height: auto;
   border-radius: 5px;
@@ -146,18 +168,25 @@ a{
   color: #2a2d63;
 }
 
+.star{
+  width: 20px;
+  aspect-ratio: 1;
+
+}
+
 /* responsive for mobiles */
 @media only screen and (max-width: 500px) {
   #selector {
+    width:220px;
     display: flex;
     flex-direction: column;
   }
-  .clases {
-    padding: 8px;
-    margin: 2px;
+  #cantidad{
+    padding-left: 11px;
   }
-  .desplega {
-    padding: 8px 47px;
-    margin: 2px;
+  .context{
+    width: auto;
   }
+  
+
 }

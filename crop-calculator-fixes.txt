@@ -1,5 +1,5 @@
 UX Design
-- Change name for Harvest or Farming calculator???
+- Change name: Harvest or Farming calculator???
 - Change actual img for seed img
 - Context : Text below the tile above instructions.
 - Increase drop down menu: Mobile same size as buttons.
@@ -7,12 +7,14 @@ UX Design
 - Search function on dropdown.
 
 Internal & data fixes
-- Added harvest yield 
+- Add harvest yield 
+- Change format time
+- Add time reduction 10%
+
 - Check all data on Wikis/In-game.
 	- Numbers of water: leek, Potato, Onion.
 	- Growth time: Potato, Tomato, Zucchini, Rice, Wheat, Canola, Sugarcane, Cotton.
 - X seed can be bought in "Place".
 - Add reduce time bonus 10% when planted in correct biome.
 - Crops sorted alphabetically.
-- Hours minutes format (ex: 1h 15min)
 
