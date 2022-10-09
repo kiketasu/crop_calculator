@@ -313,14 +313,16 @@ function calcularProfit() {
     let beneficio = ((cropObject2.sellPrice * inputNumber.value * cropObject2.yield) - coste);
 //print on final result div
     if (selected.value === cropObject2.name){ 
-      resultadoFinal.innerHTML = `📉The <span style= "color: Red; font-weight: bold;">cost</span> of buying <strong>${cropObject2.name}</strong> seeds will be <strong>${coste}</strong>      <img class="star" src="https://bit.ly/3rIu8mM" alt="star"/>
-      <br>`
-      resultadoFinal.innerHTML += `📈The <span style= "color: Green;  font-weight: bold;">net profit</span> will be <strong>${beneficio}</strong>      <img class="star" src="https://bit.ly/3rIu8mM" alt="star"/>
-      <i style="font-size: 12px;">(Net profit = final profit - crop cost)</i>. <br>`
+      resultadoFinal.innerHTML = `📉The <span style= "color: Red; font-weight: bold;">cost</span> of buying <strong>${cropObject2.name}</strong> seeds will be <strong>${coste}</strong> star coins.<br>`
+      resultadoFinal.innerHTML += `📈The <span style= "color: Green;  font-weight: bold;">net profit</span> will be <strong>${beneficio}</strong> star coins.* <br>`
       resultadoFinal.innerHTML += `🛒<strong>${cropObject2.name} </strong>can be purchased on Goofy's <strong>"${cropObject2.location}"</strong> Stall. <br> `
       resultadoFinal.innerHTML += `💧<strong>${cropObject2.name} </strong>must be <span style= "color: blue;  font-weight: bold;">watered</span> <strong>${cropObject2.waters} time/s</strong>. <br>`
-      resultadoFinal.innerHTML += `⏳<strong>${cropObject2.name}</strong> will take <strong>${cropObject2.time} </strong> to grow <i style="font-size: 12px;">(if watered when needed)</i>. <br>`
-      resultadoFinal.innerHTML += `✨If planted on <strong>"${cropObject2.location}"</strong>, it will take <strong>${cropObject2.bonusTime}</strong> to grow <i style="font-size: 12px;">(-10%).</i> <br>`
+      resultadoFinal.innerHTML += `⏳<strong>${cropObject2.name}</strong> will take <strong>${cropObject2.time} </strong> to grow.* <br>`
+      resultadoFinal.innerHTML += `✨If planted on <strong>"${cropObject2.location}"</strong>, it will take <strong>${cropObject2.bonusTime}</strong> to grow.* <br>`
+      resultadoFinal.innerHTML += ` *<i style="font-size: 12px;">(Net profit = final profit - crop cost)</i>. `
+      resultadoFinal.innerHTML += ` *<i style="font-size: 12px;">(if watered when needed)</i>. `
+      resultadoFinal.innerHTML += ` *<i style="font-size: 12px;">(-10% time reduction)</i>. `
+
     };
   };
 };

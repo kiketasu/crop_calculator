@@ -168,11 +168,6 @@ a{
   color: #2a2d63;
 }
 
-.star{
-  width: 20px;
-  aspect-ratio: 1;
-
-}
 
 /* responsive for mobiles */
 @media only screen and (max-width: 500px) {
@@ -187,6 +182,13 @@ a{
   .context{
     width: auto;
   }
+
+  button{
+    height: 70px;
+    font-size: 25px;
+  }
+
+
   
 
 }
