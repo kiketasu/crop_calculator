@@ -119,7 +119,7 @@ const cropInfo = [
     bonusTime: "1h 8min",
     sellPrice: 170,
     yield: 1,
-    waters: 3,
+    waters: 2,
     img: "https://dreamlightvalley.wikizet.com/english/images/d/db/Onion_Seed.png",
   },
   {
@@ -185,7 +185,7 @@ const cropInfo = [
     bonusTime: "45min",
     sellPrice: 61,
     yield: 2,
-    waters: 1,
+    waters: 2,
     img: "https://dreamlightvalley.wikizet.com/english/images/9/9b/Rice_Seed.png",
   },
   {
@@ -207,7 +207,7 @@ const cropInfo = [
     bonusTime: "31.5min",
     sellPrice: 109,
     yield: 1,
-    waters: 4,
+    waters: 3,
     img: "https://dreamlightvalley.wikizet.com/english/images/5/52/Canola_Seed.png",
   },
   {
