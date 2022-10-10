@@ -19,6 +19,13 @@ A very simple calculation tool made for the Disney Dreamlight Valley in-game har
 
 · You can contact me via email using the bottom contact link.
 
+## Roadmap
+
+✅ Basic structure and functionality.
+✅ Data and UX fixes.
+🟨 Add buddy item duplication to the calculator.
+🟨 Mini farming guide and tips.
+
 --  Try the site here:  https://kiketasu.github.io/crop_calculator/  --
 
 
