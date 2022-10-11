@@ -266,22 +266,38 @@ $(document).ready(function () {
 });
 
 //query selectors:
-//select
+//crop select
 let selected = document.getElementById("cultivo");
- //input
+ //crop quantity
 let inputNumber = document.getElementById("cantidad");
  //img container
 let container = document.getElementById("marco");
 //wall-e default img
 let defaultImage = `<img src="https://th.bing.com/th/id/OIP.mZ7TM_2MBpT9AM4WU0LSzgHaHg?pid=ImgDet&rs=1" alt="walle"></img>`;
+//buddy input
+let buddy = document.getElementById("companion")
+//buddy lvl inputs
+let buddyResult = document.getElementById("companion-inputs")
+
+//function to create X numbers of inputs as buddy.value
+function createResult(){
+  buddyResult.innerHTML = "";
+  for (let i = 1; i <= buddy.value; i++) {
+    const element = buddy.value[i];
+    buddyResult.innerHTML += `<div id="lvl-check"><input class="clases" id="companion-${i}" type="number" placeholder="Buddy ${i} level"/><input type="radio" name="active" /><label for="companion-${i}">active</label></div>`
+  }
+}
 
 //function to reset all content
 function resetAll() {
   resultadoFinal.innerHTML = "";
   resultadoFinal.style.display = "none";
   selected.value = "default";
+
   inputNumber.value = "";
   container.innerHTML = defaultImage;
+  buddy.value = "";
+  buddyResult.innerHTML = "";
 };
 
 //function that shows selected crop into img container
@@ -307,8 +323,9 @@ function calcularProfit() {
   resultadoFinal.style.display = "block";
   let selected = document.getElementById("cultivo");
   let inputNumber = document.getElementById("cantidad");
-//operations to calculate cost, net profit and show: where to plant, watering times.
+//operations to calculate cost, net profit and show: where to plant, watering times, and companion duplication.
   for (const cropObject2 of cropInfo) {
+    let totalHarvest = (inputNumber.value * cropObject2.yield);
     let coste = cropObject2.seedPrice * inputNumber.value;
     let beneficio = ((cropObject2.sellPrice * inputNumber.value * cropObject2.yield) - coste);
 //print on final result div
@@ -319,6 +336,7 @@ function calcularProfit() {
       resultadoFinal.innerHTML += `💧<strong>${cropObject2.name} </strong>must be <span style= "color: blue;  font-weight: bold;">watered</span> <strong>${cropObject2.waters} time/s</strong>. <br>`
       resultadoFinal.innerHTML += `⏳<strong>${cropObject2.name}</strong> will take <strong>${cropObject2.time} </strong> to grow.* <br>`
       resultadoFinal.innerHTML += `✨If planted on <strong>"${cropObject2.location}"</strong>, it will take <strong>${cropObject2.bonusTime}</strong> to grow.* <br>`
+      resultadoFinal.innerHTML += `🌱Yow will harvest <strong>${totalHarvest} ${cropObject2.name}</strong> aprox. with the current level of your gardening buddies.<br>`
       resultadoFinal.innerHTML += ` *<i style="font-size: 12px;">(Net profit = final profit - crop cost)</i>. `
       resultadoFinal.innerHTML += ` *<i style="font-size: 12px;">(if watered when needed)</i>. `
       resultadoFinal.innerHTML += ` *<i style="font-size: 12px;">(-10% time reduction)</i>. `

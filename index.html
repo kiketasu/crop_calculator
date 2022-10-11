@@ -32,7 +32,7 @@
 
     <form id="selector">
       <select onchange="selectedOption()" id="cultivo" placeholder="Select an ingredient">
-        <option value="default" selected>Select</option>
+        <option value="default" selected>-Search-</option>
         <option value="Asparagus">Asparagus</option>
         <option value="Bell Pepper">Bell Pepper</option>
         <option value="Canola">Canola</option>
@@ -57,6 +57,9 @@
         <option value="Zucchini">Zucchini</option>
       </select>
       <input class="clases" id="cantidad" type="number" placeholder="Amount"/>
+      <input onchange="createResult()" class="clases" id="companion" type="number" placeholder=" Nº of farming buddies"/>
+      <div id="companion-inputs"></div>
+    
       <button type="button" class="clases calculate" onclick="calcularProfit()">
         CALCULATE
       </button>
@@ -66,7 +69,7 @@
     </form>
 
     <p class="tip">
-      ⚠️Attention: This tool cannot calculate duplicated crops by companions.⚠️
+      ⚠️Attention: This tool cannot calculate duplicated crops by buddies YET.⚠️
     </p>
     <div id="resultadoFinal"></div>
 

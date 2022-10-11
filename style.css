@@ -168,6 +168,12 @@ a{
   color: #2a2d63;
 }
 
+#lvl-check{
+  display: flex;
+  align-items: center;
+}
+
+
 
 /* responsive for mobiles */
 @media only screen and (max-width: 500px) {
