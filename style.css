@@ -168,7 +168,7 @@ a{
   color: #2a2d63;
 }
 
-#lvl-check{
+.lvl-check{
   display: flex;
   align-items: center;
 }

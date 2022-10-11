@@ -284,7 +284,12 @@ function createResult(){
   buddyResult.innerHTML = "";
   for (let i = 1; i <= buddy.value; i++) {
     const element = buddy.value[i];
-    buddyResult.innerHTML += `<div id="lvl-check"><input class="clases" id="companion-${i}" type="number" placeholder="Buddy ${i} level"/><input type="radio" name="active" /><label for="companion-${i}">active</label></div>`
+    buddyResult.innerHTML +=
+     `<div class= "lvl-check">
+     <input class="clases" id="companion-${i}" type="number" placeholder="Buddy ${i} level"/>
+     <input type="radio" name="active" />
+     <label for="companion-${i}">active</label>
+     </div>`;
   }
 }
 
@@ -344,6 +349,5 @@ function calcularProfit() {
     };
   };
 };
-
 
 
