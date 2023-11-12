@@ -1,3 +1,4 @@
+Update: ⚠️Wiki links needs to be fixed in order to see the pictures⚠️
 # 🌱Crop Calculator for DDLV🌱
 
 ![](https://i.ibb.co/qgmGRZn/img1.png) <br>
