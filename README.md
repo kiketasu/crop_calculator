@@ -1,5 +1,6 @@
-Update: ⚠️Wiki links needs to be fixed in order to see the pictures⚠️
 # 🌱Crop Calculator for DDLV🌱
+Try the site here:  https://kiketasu.github.io/crop_calculator/
+
 
 ![](https://i.ibb.co/qgmGRZn/img1.png) <br>
 
@@ -19,10 +20,7 @@ A very simple calculation tool made for the Disney Dreamlight Valley in-game har
 
 ✅ Basic structure and functionality. <br>
 ✅ Data and UX fixes. <br>
-🟨 Add buddy item duplication to the calculator. <br>
-🟨 Mini farming guide and tips. <br>
-
-Try the site here:  https://kiketasu.github.io/crop_calculator/
+🟨 Update images
 
 
 
