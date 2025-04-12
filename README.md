@@ -1,4 +1,4 @@
-# 🌱Crop Calculator for DDLV🌱
+# 🌱Crop Calculator for DDLV🌱 (UNSUPPORTED)
 Try the site here:  https://kiketasu.github.io/crop_calculator/
 
 
@@ -15,12 +15,6 @@ A very simple calculation tool made for the Disney Dreamlight Valley in-game har
 . With the top-right fixed button you can navigate to the DDLV Wiki. <br>
 
 ![](https://i.ibb.co/jgg6p78/img4.png)
-
-## Roadmap
-
-✅ Basic structure and functionality. <br>
-✅ Data and UX fixes. <br>
-🟨 Update images
 
 
 
