@@ -1,6 +1,7 @@
 # 🌱Crop Calculator for DDLV🌱 (UNSUPPORTED)
-Try the site here:  https://kiketasu.github.io/crop_calculator/
+CLICK FOR VIEW ➡️  https://kiketasu.github.io/crop_calculator/
 
+this was an old project for practising coding.
 
 ![](https://i.ibb.co/qgmGRZn/img1.png) <br>
 
